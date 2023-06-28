@@ -5,7 +5,7 @@ fetch(url).then((response) => {
 }).then((contest) => {
     console.log(contest);
     for (let item in contest) {
-        console.log(contest[item]);
+        // console.log(contest[item]);
         contestCards.innerHTML += `   <div class="card border border-1 border-success rounded-4 p-2" style="width: 25rem;">
         <img src="https://t3.ftcdn.net/jpg/02/80/01/64/360_F_280016453_VkNxKbvtljZxNWa3Y4A41BB6gEp1DIjY.jpg" class="card-img-top" alt="...">
         <div class="card-body">
