@@ -1,4 +1,5 @@
 let contestCards = document.getElementById("contestCards")
+let inputFilter = document.getElementById("statusContest")
 let url = "https://kontests.net/api/v1/all";
 fetch(url).then((response) => {
     return response.json();
@@ -25,3 +26,11 @@ fetch(url).then((response) => {
       </div>`
     }
 })
+
+
+// let filterContest = (item) =>{
+//   if(inputFilter.value == 'running'){
+//     contest[item].status == 'coding'
+//   }
+
+// }
