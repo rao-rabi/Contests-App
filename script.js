@@ -1,5 +1,5 @@
 let contestCards = document.getElementById("contestCards")
-let inputFilter = document.getElementById("statusContest")
+// let inputFilter = document.getElementById("statusContest")
 let url = "https://kontests.net/api/v1/all";
 fetch(url).then((response) => {
     return response.json();
@@ -24,6 +24,12 @@ fetch(url).then((response) => {
           <a href="${contest[item].url}" class="btn btn-success w-100">VISIT SITE</a>
         </div>
       </div>`
+
+
+    // console.log(
+    //   contest[item].filter(status == 'before')
+
+    // );
     }
 })
 
